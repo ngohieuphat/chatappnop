@@ -1,5 +1,6 @@
 import 'package:chatappnop/components/logo.dart';
 import 'package:chatappnop/screens/login/select_country.dart';
+import 'package:chatappnop/screens/login/verify_number.dart';
 import 'package:cupertino_list_tile/cupertino_list_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -85,9 +86,9 @@ class _EditNumberState extends State<EditNumber> {
                   Navigator.push(
                       context,
                       CupertinoPageRoute(
-                          // builder: (context) => VerifyNumber(
-                          //       number: data['code']! + _enterPhoneNumber.text,
-                          //     )
+                          builder: (context) => VerifyNumber(
+                                number: data['code']! + _enterPhoneNumber.text,
+                              )
                               ));
                 }),
           )
