@@ -102,12 +102,13 @@ class _VerifyNumberState extends State<VerifyNumber> {
                     Text("Didn't receive the OTP?"),
                     CupertinoButton(
                         child: Text("RESEND OTP"),
-                        onPressed: () async {
-                          setState(() {
-                            this._status = Status.Waiting;
-                          });
-                          _verifyPhoneNumber();
-                        })
+                        onPressed: ()async => _verifyPhoneNumber())
+                        // onPressed: () async {
+                        //   setState(() {
+                        //     this._status = Status.Waiting;
+                        //   });
+                        //   _verifyPhoneNumber();
+                        // })
                   ],
                 )
               ],
@@ -128,13 +129,15 @@ class _VerifyNumberState extends State<VerifyNumber> {
                     onPressed: () => Navigator.pop(context)),
                 CupertinoButton(
                     child: Text("Resend Code"),
-                    onPressed: () async {
-                      setState(() {
-                        this._status = Status.Waiting;
-                      });
+                    onPressed: () async => _verifyPhoneNumber(),
+                    // // onPressed: () async {
+                    // //   setState(() {
+                    // //     this._status = Status.Waiting;
+                    // //   });
 
-                      _verifyPhoneNumber();
-                    }),
+                    //   _verifyPhoneNumber();
+                    // }
+                    ),
               ],
             ),
     );

@@ -1,10 +1,12 @@
 import 'package:chatappnop/screens/chatdetail.dart';
+import 'package:chatappnop/states/lib.dart';
 import 'package:cupertino_list_tile/cupertino_list_tile.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
 class People extends StatelessWidget {
   People({Key? key}) : super(key: key);

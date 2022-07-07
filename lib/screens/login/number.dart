@@ -14,7 +14,7 @@ class EditNumber extends StatefulWidget {
 
 class _EditNumberState extends State<EditNumber> {
   var _enterPhoneNumber = TextEditingController();
-  Map<String, dynamic> data = {"name": "Portugal", "code": "+351"};
+  Map<String, dynamic> data = {"name": "VietNam", "code": "+84"};
   Map<String, dynamic>? dataResult;
 
   @override
@@ -26,7 +26,7 @@ class _EditNumberState extends State<EditNumber> {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: Text("Edit Number"),
+        middle: Text(" Number"),
         previousPageTitle: "Back",
       ),
       child: Column(
@@ -88,8 +88,7 @@ class _EditNumberState extends State<EditNumber> {
                       CupertinoPageRoute(
                           builder: (context) => VerifyNumber(
                                 number: data['code']! + _enterPhoneNumber.text,
-                              )
-                              ));
+                              )));
                 }),
           )
         ],

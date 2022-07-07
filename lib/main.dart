@@ -1,11 +1,5 @@
 import 'dart:io';
-
-import 'package:chatappnop/screens/Person.dart';
-import 'package:chatappnop/screens/calls.dart';
-import 'package:chatappnop/screens/chats.dart';
-import 'package:chatappnop/screens/home_page.dart';
 import 'package:chatappnop/screens/login/hello.dart';
-import 'package:chatappnop/screens/settings.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
@@ -22,7 +16,7 @@ Future main() async {
 }
 
 Future _connectToFirebaseEmulator() async {
-  final fireStorePort = "8090";
+  final fireStorePort = "8080";
   final authPort = 9099;
   final storagePort = 9199;
   final localHost = Platform.isAndroid ? '10.0.2.2' : 'localhost';

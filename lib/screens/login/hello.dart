@@ -2,7 +2,7 @@ import 'package:chatappnop/components/blue_image_page_scaffold.dart';
 import 'package:chatappnop/components/lets_start.dart';
 import 'package:chatappnop/components/logo.dart';
 import 'package:chatappnop/components/terms_and_conditions.dart';
-import 'package:chatappnop/screens/login/editnumber.dart';
+import 'package:chatappnop/screens/login/number.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';

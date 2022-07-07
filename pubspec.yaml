@@ -39,6 +39,17 @@ dependencies:
   cloud_functions: ^3.2.15
   cloud_firestore: ^3.1.15
   firebase_auth: ^3.3.18
+  flutter_chat_bubble: ^2.0.0
+  mobx: ^2.0.7+4
+  flutter_mobx: ^2.0.6+1
+  image_picker: ^0.8.5+3
+  path_provider: ^2.0.11
+  firebase_storage: ^10.3.1
+  json_serializable: ^6.2.0
+  json_annotation: ^4.5.0
+  build_runner: ^2.1.7
+  mobx_codegen: ^2.0.4
+
 
 
 
